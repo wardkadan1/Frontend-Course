@@ -1,0 +1,151 @@
+section._3_ {
+    margin: 90px auto;
+    background-color: #ffffff;
+    padding: 10px 86px;
+    display: grid;
+    justify-content: center;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: -54px;
+    margin-bottom: -67px;
+}
+
+._3_ h4{
+    color: #FF6868;
+    font-size: 29px;
+    margin-top: 83px;
+    margin-bottom: -15px;
+    font-family: cursive;
+}
+
+._3_ h1{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 64px;
+    width: 563px;
+}
+
+.butt{
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    height: 78px;
+    margin-top: 215px;
+    margin-left: 544px;
+}
+
+._3_ button{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-left: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+._3_ button:hover  {
+    transform: scale(1.1);      /* Slightly increase the size of the button */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+}
+
+.butt.l_butt{
+    background: #efefef;
+}
+
+.r_butt{
+    background: #39DB4A;
+    border: none;
+}
+
+section.up img{
+    width: 30px;
+    height: 40px;
+}
+
+._3_box {
+    box-shadow: 0px 8px 29px #515251;
+    border: none;
+    border-radius: 22px;
+    width: 330px;
+    height: 322px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* padding: 17px 13px; */
+    /* overflow: hidden; */
+    /* background-color: white; */
+    margin-left: 85px;
+    margin-right: 78px;
+}
+
+._3_box_img {
+    width: 178px;
+    height: 160px;
+    margin-left: 81px;
+    margin-right: -46px;
+    margin-top: 17px;
+}
+
+._3_box p {
+    margin-top: -9px;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+._3_box div {
+    display: flex;
+    margin-top: -6px;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.down h2{
+    font-size: 16px;
+    float: left;
+    margin-left: 30px;
+}
+
+.tt img{
+    width: 12px;
+    height: 9px;
+    margin-top: 26px;
+    margin-right: 7px; 
+}
+
+.tt h5{
+    height: 0px;
+}
+
+.tt span{
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tt div{
+    display: flex;
+    margin-right: 29px;
+}
+
+.tt{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.pp{
+    display: grid;
+}
+
+.full_heart{
+    width: 45px;
+    height: 42px;
+    margin-left: 72px;
+    margin-top: -2px;
+}

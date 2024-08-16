@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2% 10%;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 86px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+.home{
+    color: #39DB4A;
+}
+
+nav button{
+    color: #ffffff;
+    background-color: #39DB4A;
+    border-radius: 20px;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    font-size: 16px;
+    border:none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+section.main_ {
+    padding: 3px 87px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: center; /* Space between text and image */
+}
+
+section.main_ .main_img {
+    width: 620px;
+    margin-left: 109px;
+    height: auto;
+    overflow: hidden;
+}
+
+section.main_ h1 {
+    text-align: left;
+    font-size: 52px;
+    font-weight: 800;
+    width: 582px;
+    margin: 0px;
+    margin-top: 33px;
+    flex: 1;
+
+}
+
+section.main_ .prag{
+    text-align: left;
+    width: 533px;
+    font-size: 24px;
+    margin-bottom: 54px;
+    margin-top: 46px;
+}
+
+section.main_ span{
+    color: #39DB4A;
+}
+
+section.main_ .green{
+    float: left;
+    color: #ffffff;
+    background-color: #39DB4A;
+    border-radius: 44px;
+    width: 153px;
+    height: 46px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0px 8px 29px #39db4a;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+section.main_ .watc{
+    float: left;
+    margin-left: 36px;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+section.main_ .cir{
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    margin-left: 326px;
+    margin-top: -6px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.cir:hover , .green:hover, .left_ button:hover  {
+    transform: scale(1.1);      /* Slightly increase the size of the button */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+}
+
+section.main_ .cir img{
+    width: 40%;
+    height: auto;
+}
+
+section.img_over {
+    box-shadow: 0px 8px 29px #515251;
+    border: none;
+    border-radius: 33px;
+    width: 271px;
+    height: 71px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 17px 13px;
+    overflow: hidden;
+    background-color: white;
+    margin-left: 67px;
+    margin-right: -30px;
+}
+
+.img_over_1{
+    float: left;
+    margin-right: 28px;
+    width: 81px;
+    height: 79px;
+    margin-top: -3px;
+}
+
+.img_over_2 {
+    width: 98px;
+    height: 15px;
+    float: left;
+    margin-block: -8px;
+}
+
+.img_over_h2_1{
+    font-size: 20px;
+    float: left;
+}
+
+.img_over_p_2{
+    font-size: 16px;
+    text-align: justify;
+    font-weight: bold;
+
+}
+
+section.img_over span{
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+section.img_over div{
+    display: grid;
+    padding: 0;
+    margin-top: -14px;
+}
+
+.img_over_main{
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.speech-bubble {
+    background: #ffffff;
+    position: relative;
+    border-radius: 23px;
+    padding: 10px 20px;
+    color: #ff4a4a;
+    font-size: 18px;
+    text-align: left;
+    width: 163px;
+    height: 24px;
+    margin-bottom: -225px;
+    margin-left: 36px;
+    margin-top: 219px;
+    box-shadow: 0 2px 209px rgba(0, 0, 0, 1.1);
+}
