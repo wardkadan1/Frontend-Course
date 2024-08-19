@@ -51,8 +51,9 @@ section._3_ {
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
 }
 
-.butt.l_butt{
+.l_butt{
     background: #efefef;
+    border: black;
 }
 
 .r_butt{
