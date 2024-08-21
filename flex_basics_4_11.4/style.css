@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+}
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
