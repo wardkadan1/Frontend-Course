@@ -1,0 +1,14 @@
+body {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+a::after {
+  content: " (" attr(href) ")";
+  color: rgb(185, 27, 87);
+  font-size: 14px;
+}
