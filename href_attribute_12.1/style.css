@@ -7,6 +7,7 @@ a {
   padding-right: 5px;
 }
 
+/*for me :) id class tag*/
 a::after {
   content: " (" attr(href) ")";
   color: rgb(185, 27, 87);
