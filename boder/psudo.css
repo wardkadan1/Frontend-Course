@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+p#box {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  position: relative;
+}
+
+p#box::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 500px;
+  background-color: green;
+}
+
+p#box:hover::after {
+  background-color: purple;
+}
+
+section#border-box {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p#txt {
+  color: white;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 2px solid red;
+}
+
+p#txt::after {
+  content: "cool border";
+  position: absolute;
+  color: white;
+  background-color: black;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  height: 320px;
+  align-items: center;
+}
+
+p#txt::before {
+  content: "";
+  position: absolute;
+  color: white;
+  background-color: black;
+  width: 320px;
+  height: 250px;
+}
+
+#tooltip {
+  color: red;
+  position: relative;
+}
+
+#tooltip::after {
+  visibility: hidden;
+  content: "this is a tool tip";
+  background-color: yellow;
+  border-radius: 5px;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  width: max-content;
+  z-index: 1;
+}
+
+#tooltip:hover::after {
+  visibility: visible;
+}
+
+#colorBorder {
+  /* this is ugly! i want a gradient! */
+  /* border-color: red green yellow; */
+  position: relative;
+  left: 100px;
+  top: 50vh;
+  width: 300px;
+  height: 200px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#colorBorder::after {
+  width: 105%;
+  height: 105%;
+  content: "";
+  background-image: linear-gradient(to bottom left, rgb(10, 141, 185), red);
+  position: absolute;
+  z-index: -1;
+}
