@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+button {
+  width: 140px;
+  height: 59px;
+  margin: 17px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  padding-inline: 0;
+  padding-block: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+._1_::before {
+  content: "Cool!";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: chartreuse;
+  transform: translateY(-100%);
+  transition: transform 1s;
+}
+
+._1_:hover::before {
+  transform: translateY(0);
+}
+
+._2_::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(4, 0, 255);
+  transform: translateX(-100%);
+  transition: transform 1s;
+}
+
+._2_ span {
+  z-index: 1;
+}
+
+._2_:hover::before {
+  transform: translateX(0);
+}
+
+._3_::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(238, 255, 0);
+  transform: translate(-100%, 100%) rotate(45deg);
+  transition: transform 1s;
+}
+
+._3_ span {
+  z-index: 1;
+}
+
+._3_:hover::before {
+  transform: translate(0, 0);
+}
+
+._4_::before {
+  content: "Scale";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0);
+  color: white;
+  transform: scale(3);
+  transition: transform 1s;
+  z-index: -1;
+}
+
+._4_:hover::before {
+  transform: scale(1);
+  z-index: 1;
+}
+
+._5_::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+  transform: skew(25deg);
+  transition: transform 1s;
+  z-index: -1;
+}
+
+._5_:hover::before {
+  transform: skew(0deg) rotateY(180deg);
+  z-index: 1;
+}
+
+._5_:hover {
+  transform: skewY(-10deg);
+}
+
+._5_ span {
+  z-index: 1;
+}
