@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000000;
+}
+
+div {
+  margin: 30px;
+}
+
+._1_ {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #333;
+  border-radius: 50%;
+  border-top: 5px solid #ff0000;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+._2_ {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #333 transparent;
+  border-radius: 50%;
+  border-top: 5px solid #ff0000;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+._3_ {
+  display: flex;
+  justify-content: space-around;
+}
+.one,
+.two,
+.three {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #333;
+  animation: _color_ 1s linear infinite;
+}
+
+.two {
+  animation-delay: 0.5s;
+}
+
+.three {
+  animation-delay: 0.75s;
+}
+
+@keyframes _color_ {
+  to {
+    background-color: #ff0000;
+  }
+}
+
+._4_ {
+  display: flex;
+  justify-content: space-around;
+}
+.one_,
+.two_,
+.three_ {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ff0000;
+  animation: scale 1s ease infinite;
+}
+
+.two_ {
+  animation-delay: 0.5s;
+}
+
+.three_ {
+  animation-delay: 0.75s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
