@@ -37,16 +37,16 @@ body {
 }
 
 .box3 {
-  background-color: #32cd32; /* LimeGreen */
+  background-color: #32cd32;
   grid-column: 3 / span 2;
 }
 
 .box4 {
-  background-color: #8a2be2; /* BlueViolet */
+  background-color: #8a2be2;
   grid-column: 3 / span 1;
 }
 
 .box5 {
-  background-color: #8a2be2; /* Gold */
+  background-color: #8a2be2;
   grid-column: 4 / span 1;
 }
