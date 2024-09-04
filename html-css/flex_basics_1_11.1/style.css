@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+}
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}

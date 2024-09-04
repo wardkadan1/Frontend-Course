@@ -1,0 +1,77 @@
+body {
+    background-color: #2d3e50;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #ecf0f1;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+}
+
+/* Flat Style */
+.flat {
+    background-color: #3498db;
+    color: white;
+}
+
+.flat.submit {
+    background-color: #f39c12;
+    color: white;
+    font-size: 10px;
+}
+
+/* Round Style */
+.round.green {
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 25px;
+}
+
+.round.red {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 25px;
+    font-size: 10px;
+}
+
+/* Flat Ghost Style */
+.flat-ghost {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #3498db;
+}
+
+.flat-ghost.submit {
+    border-color: #e31dfd;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+/* Round Ghost Style */
+.round-ghost {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #d7ff45;
+    border-radius: 25px;
+}
+
+.round-ghost.submit {
+    border-color: #47eefa;
+    color: #ffffff;
+    font-size: 10px;
+}

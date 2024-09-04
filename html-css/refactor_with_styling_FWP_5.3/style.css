@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  #intro, #interests, #photos, #social-media {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 90px auto;
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  h1, h2, h3, h4 {
+    color: #444;
+  }
+  
+  #intro img {
+    width: 270px;
+    height: 200px;
+    border-radius: 50%; /* Make the image round */
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
