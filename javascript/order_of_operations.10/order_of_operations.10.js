@@ -1,114 +1,114 @@
 //1
 
-const a = 8;
-const b = 2;
-const result = a * b + 3;
-console.log(result);
+const a1 = 8;
+const b1 = 2;
+const result1 = a1 * b1 + 3;
+console.log(result1);
 
 //2
 
-const x = 4;
-const y = 2;
-const z = 3;
-const result = x + y * z - 1;
-console.log(result);
+const x1 = 4;
+const y1 = 2;
+const z1 = 3;
+const result2 = x1 + y1 * z1 - 1;
+console.log(result2);
 
 //3
 
-const a = 4;
-const b = 2;
-const result = (a + b) * (b - 1);
-console.log(result); // Output: 6
+const a2 = 4;
+const b2 = 2;
+const result3 = (a2 + b2) * (b2 - 1);
+console.log(result3);
 
 //4
 
-const num = 50;
-const x = 5;
-const y = 6;
-const result = num - x * y;
-console.log(result);
+const num1 = 50;
+const x2 = 5;
+const y2 = 6;
+const result4 = num1 - x2 * y2;
+console.log(result4);
 
 //5
 
-const a = 8;
-const b = 2;
-const c = 4;
-const result = (a / b) * c;
-console.log(result);
+const a3 = 8;
+const b3 = 2;
+const c3 = 4;
+const result5 = (a3 / b3) * c3;
+console.log(result5);
 
 //6
 
-const a = 2;
-const b = 3;
-const c = 4;
+const a4 = 2;
+const b4 = 3;
+const c4 = 4;
 
-const result1 = a + b * c;
-console.log(result1);
+const result6 = a4 + b4 * c4;
+console.log(result6);
 
-const result2 = (a + b) * c;
-console.log(result2);
+const result7 = (a4 + b4) * c4;
+console.log(result7);
 
 //7
 
-const a = 2;
-const b = 3;
-const c = 5;
-const result = ((a + b) * c) / 2;
-console.log(result);
+const a5 = 2;
+const b5 = 3;
+const c5 = 5;
+const result8 = ((a5 + b5) * c5) / 2;
+console.log(result8);
 
 //8
 
-const a = 3;
-const b = 6;
-const c = 5;
-const d = 4;
+const a6 = 3;
+const b6 = 6;
+const c6 = 5;
+const d6 = 4;
 
-const result = a + (b * (c + d)) / b - d;
-console.log(result);
+const result9 = a6 + (b6 * (c6 + d6)) / b6 - d6;
+console.log(result9);
 
 //9
 
-const num = 2;
+const num2 = 2;
 const str = "3";
-const result = num + str * 4;
-console.log(result);
+const result10 = num2 + str * 4;
+console.log(result10);
 
 //10
 
-const a = 10;
-const b = 20;
-const c = "30";
+const a7 = 10;
+const b7 = 20;
+const c7 = "30";
 
-const result1 = a + b + c;
-console.log(result1);
+const result11 = a7 + b7 + c7;
+console.log(result11);
 
-const result2 = c + a + b;
-console.log(result2);
+const result12 = c7 + a7 + b7;
+console.log(result12);
 
 //11
 
 const numStr = "3";
 const num = 10;
 
-const result = +numStr + num;
-console.log(result);
+const result13 = +numStr + num;
+console.log(result13);
 
 //12
 
-let x = 10;
-const result = x++ * 2;
-console.log(result);
-console.log(x);
+let x3 = 10;
+const result14 = x3++ * 2;
+console.log(result14);
+console.log(x3);
 
 //13
 
-const a = 10;
-const result = a / 0;
-console.log(result);
+const a8 = 10;
+const result15 = a8 / 0;
+console.log(result15);
 
 //14
 
-const a = 15;
-const b = 4;
-const result = a % b;
-console.log(result);
+const a9 = 15;
+const b9 = 4;
+const result16 = a9 % b9;
+console.log(result16);
