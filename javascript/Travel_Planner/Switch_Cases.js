@@ -1,6 +1,6 @@
 //1
 
-let dayOfWeek = 5;
+const dayOfWeek = 5;
 switch (dayOfWeek) {
   case 1:
     console.log("Special activity for Sunday");
@@ -29,7 +29,7 @@ switch (dayOfWeek) {
 
 //2
 
-let themeColor = "light";
+const themeColor = "light";
 switch (themeColor) {
   case "light":
     console.log("Theme set to light");
@@ -46,7 +46,7 @@ switch (themeColor) {
 
 //3
 
-let notificationStatus = "new";
+const notificationStatus = "new";
 switch (notificationStatus) {
   case "new":
   case "unread":
@@ -62,7 +62,7 @@ switch (notificationStatus) {
 
 //4
 
-let packageRating = "Premium";
+const packageRating = "Premium";
 switch (packageRating) {
   case "Basic":
     console.log("Basic package: No frills travel");
@@ -82,7 +82,7 @@ switch (packageRating) {
 
 //5
 
-let mealPlan = "Lunch";
+const mealPlan = "Lunch";
 switch (mealPlan) {
   case "Breakfast":
     console.log("Breakfast");
@@ -94,7 +94,7 @@ switch (mealPlan) {
 
 //6
 
-let satisfactionScore = 75;
+const satisfactionScore = 75;
 switch (true) {
   case satisfactionScore >= 90:
     console.log("Highly Satisfied");
@@ -111,7 +111,7 @@ switch (true) {
 
 //7
 
-let travelMonth = 12;
+const travelMonth = 12;
 switch (travelMonth) {
   case 12:
   case 1:
@@ -143,7 +143,7 @@ switch (travelMonth) {
 
 //8
 
-let travelSeason = 4;
+const travelSeason = 4;
 switch (travelSeason) {
   case 1:
     console.log("Winter Advisory: Watch out for snowy conditions.");

@@ -1,6 +1,6 @@
 //1
 
-let travelBudget = 1200;
+const travelBudget = 1200;
 if (travelBudget > 1000) {
   console.log("Luxury travel options available");
 } else {
@@ -9,7 +9,7 @@ if (travelBudget > 1000) {
 
 //2
 
-let destinationTemp = 20;
+const destinationTemp = 20;
 if (destinationTemp >= 15 && destinationTemp <= 27) {
   console.log("Ideal weather for the trip");
 } else {
@@ -18,8 +18,8 @@ if (destinationTemp >= 15 && destinationTemp <= 27) {
 
 //3
 
-let flightBooked = true;
-let hotelBooked = false;
+const flightBooked = true;
+const hotelBooked = false;
 if (flightBooked) {
   if (hotelBooked) {
     console.log("Your travel plan is set");
@@ -32,8 +32,8 @@ if (flightBooked) {
 
 //4
 
-let chosenPackagePrice = 800;
-let alternativePackagePrice = 900;
+const chosenPackagePrice = 800;
+const alternativePackagePrice = 900;
 if (chosenPackagePrice === alternativePackagePrice) {
   console.log("You've chosen the best priced package");
 } else if (alternativePackagePrice < chosenPackagePrice) {
@@ -53,14 +53,14 @@ if (travelerAge >= 65) {
 
 //6
 
-let satisfactionScore = 85;
+const satisfactionScore = 85;
 console.log(
   satisfactionScore >= 80 ? "Highly satisfied traveler" : "Needs improvement"
 );
 
 //7
 
-let groupSize = 5;
+const groupSize = 5;
 console.log(
   groupSize % 2 === 0 ? "Even number of travelers" : "Odd number of travelers"
 );
@@ -72,12 +72,12 @@ console.log(travelerAge < 12 ? "Child" : travelerAge <= 19 ? "Teen" : "Adult");
 
 //9
 
-let experienceLevel = 6;
+const experienceLevel = 6;
 console.log(experienceLevel > 5 ? "Experienced traveler" : "New traveler");
 
 //10
 
-let tripDuration = 10;
+const tripDuration = 10;
 if (tripDuration < 3) {
   console.log("Weekend getaway");
 } else if (tripDuration <= 14) {
@@ -89,7 +89,7 @@ if (tripDuration < 3) {
 //11
 
 travelerAge = 22;
-let activityAgeRequirement = 18;
+const activityAgeRequirement = 18;
 if (travelerAge >= activityAgeRequirement) {
   console.log("Allowed to participate");
 } else {
@@ -98,7 +98,7 @@ if (travelerAge >= activityAgeRequirement) {
 
 //12
 
-let dayOfTravel = "Saturday";
+const dayOfTravel = "Saturday";
 if (dayOfTravel === "Saturday" || dayOfTravel === "Sunday") {
   console.log("Special weekend offer available!");
 } else {
@@ -107,7 +107,7 @@ if (dayOfTravel === "Saturday" || dayOfTravel === "Sunday") {
 
 //13
 
-let destinationOpeningYear = 2005;
+const destinationOpeningYear = 2005;
 if (destinationOpeningYear >= 2001 && destinationOpeningYear <= 2100) {
   console.log("21st century destination");
 } else {
@@ -116,8 +116,8 @@ if (destinationOpeningYear >= 2001 && destinationOpeningYear <= 2100) {
 
 //14
 
-let destinationType = "Adventure";
-let destinationRating = 9;
+const destinationType = "Adventure";
+const destinationRating = 9;
 if (destinationType === "Adventure" && destinationRating >= 8) {
   console.log("Must Visit");
 } else {
@@ -126,7 +126,7 @@ if (destinationType === "Adventure" && destinationRating >= 8) {
 
 //15
 
-let packagePrice = 1200;
+const packagePrice = 1200;
 if (packagePrice <= 1000) {
   console.log("Discounted package");
 } else {
@@ -136,7 +136,7 @@ if (packagePrice <= 1000) {
 //16
 
 travelerAge = 22;
-let isAdultActivity = true;
+const isAdultActivity = true;
 if (isAdultActivity && travelerAge >= 18) {
   console.log("Allowed to participate");
 } else {
@@ -145,7 +145,7 @@ if (isAdultActivity && travelerAge >= 18) {
 
 //17
 
-let destinationName = "Famous Beach Resort";
+const destinationName = "Famous Beach Resort";
 if (
   destinationName.includes("famous") ||
   destinationName.includes("top destination")
