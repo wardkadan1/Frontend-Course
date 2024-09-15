@@ -235,3 +235,39 @@ console.log(tribonacci([0, 0, 1], 10));
 console.log(tribonacci([1, 1, 1], 3));
 console.log(tribonacci([1, 1, 1], 0));
 console.log("\n");
+
+//Ex5.1
+
+function trimString(str) {
+  return str.slice(1, -1);
+}
+
+console.log("\nEX5.1\n");
+console.log(trimString("ward"));
+console.log(trimString("good"));
+console.log("\n");
+
+//Ex5.2
+
+function repeatStr(n, s) {
+  return s.repeat(n);
+}
+
+console.log("\nEX5.2\n");
+console.log(repeatStr(5, "ward"));
+console.log(repeatStr(3, "good"));
+console.log("\n");
+
+//Ex5.3
+
+function toCamelCase(str) {
+  const str_ = str.split(/[-_]/);
+  let result = [];
+  for (let i = 0; i < str_.length; i++) result += str_[i];
+  return result;
+}
+
+console.log("\nEX5.3\n");
+console.log(toCamelCase("the-stealth-warrior"));
+console.log(toCamelCase("The_Stealth_Warrior"));
+console.log("\n");
