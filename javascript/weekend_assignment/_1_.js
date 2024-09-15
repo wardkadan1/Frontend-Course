@@ -62,7 +62,7 @@ function findNextSquare(sq) {
   return `-1 ${sq} is not a perfect`;
 }
 
-console.log("\nEX2.1\n");
+console.log("\nEX2.3\n");
 console.log(findNextSquare(121));
 console.log(findNextSquare(625));
 console.log(findNextSquare(114));
