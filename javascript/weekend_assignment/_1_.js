@@ -33,3 +33,37 @@ console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77, "a"]));
 console.log(sumTwoSmallestNumbers([19, 5, -20, 2, -9, -5]));
 console.log(sumTwoSmallestNumbers([-19, 0.5, 0.2, 2, 9, 5]));
 console.log("\n");
+
+//Ex2.2
+
+function binaryArrayToNumber(arr) {
+  if (arr.length > arr.filter((num) => num === 0 || num === 1).length)
+    return "There is number different from 0/1";
+  return parseInt(arr.join(""), 2);
+}
+
+console.log("\nEX2.2\n");
+console.log(binaryArrayToNumber([0, 0, 0, 1]));
+console.log(binaryArrayToNumber([0, 0, 1, 0]));
+console.log(binaryArrayToNumber([9, 1, 0, 1]));
+console.log(binaryArrayToNumber([0, 1, 1, 0]));
+console.log(binaryArrayToNumber([1, 1, 1, 1]));
+console.log(binaryArrayToNumber([1, 0, 0, 0, 0]));
+console.log(binaryArrayToNumber([1, 1, 1, 1, 1]));
+console.log(binaryArrayToNumber([1, 0, 0, 0, 0, 0]));
+console.log("\n");
+
+//Ex2.3
+
+function findNextSquare(sq) {
+  if (Number.isInteger(Math.sqrt(sq))) {
+    return Math.pow(Math.sqrt(sq) + 1, 2);
+  }
+  return `-1 ${sq} is not a perfect`;
+}
+
+console.log("\nEX2.1\n");
+console.log(findNextSquare(121));
+console.log(findNextSquare(625));
+console.log(findNextSquare(114));
+console.log("\n");
