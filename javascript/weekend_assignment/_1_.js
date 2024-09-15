@@ -67,3 +67,51 @@ console.log(findNextSquare(121));
 console.log(findNextSquare(625));
 console.log(findNextSquare(114));
 console.log("\n");
+
+//Ex2.4
+
+function findUniq(arr) {
+  if (arr.length < 3) return "Enter at least 3 numbers";
+  arr.sort((a, b) => a - b);
+  if (arr[0] === arr[1]) return arr[arr.length - 1];
+  else return arr[0];
+}
+
+console.log("\nEX2.4\n");
+console.log(findUniq([1, 1, 1, 2, 1, 1]));
+console.log(findUniq([0, 0, 0.55, 0, 0]));
+console.log(findUniq([0, 900, 0]));
+console.log(findUniq([0, 0.55]));
+console.log("\n");
+
+//Ex2.5
+
+function summation(num) {
+  let sum = 0;
+  if (num < 1 || Number.isInteger(num) === false) return "wrong number";
+  for (let i = 1; i < num + 1; i++) sum += i;
+  return sum;
+}
+
+console.log("\nEX2.5\n");
+console.log(summation(8));
+console.log(summation(2));
+console.log(summation(-1));
+console.log(summation(1.2));
+console.log(summation("a"));
+console.log("\n");
+
+//Ex2.6
+
+function centuryFromYear(year) {
+  if (year < 1) return "wrong year";
+  if (year % 100 === 0) return year / 100;
+  else return Math.floor(year / 100) + 1; // it will take the full number
+}
+
+console.log("\nEX2.6\n");
+console.log(centuryFromYear(-1));
+console.log(centuryFromYear(1));
+console.log(centuryFromYear(1705));
+console.log(centuryFromYear(1800));
+console.log("\n");
