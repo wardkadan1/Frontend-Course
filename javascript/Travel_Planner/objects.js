@@ -53,6 +53,7 @@ destination["landmarks"][0]["description"] =
 console.log("Has ratings:", "ratings" in destination);
 
 // 4
+
 destinations = [
   {
     name: "Eiffel Tower",
@@ -64,6 +65,40 @@ destinations = [
   },
 ];
 
+console.log(destinations[0].details.visitorsPerYear);
+
+function getAverageNumberofVisitors(destination) {
+  return (
+    destination.reduce((sum, cur) => sum + cur.details.visitorsPerYear, 0) /
+    destination.length
+  );
+}
+
+console.log(getAverageNumberofVisitors(destinations));
+
+//5
+
+const destination1 = {
+  name: "Eiffel Tower",
+  location: "Paris",
+};
+const destination2 = {
+  visitorsPerYear: 7000000,
+  details: {
+    entryFee: "25 USD",
+  },
+};
+
+const mergedDestination = Object.assign(destination1, destination2);
+console.log(mergedDestination);
+
+Object.freeze(mergedDestination);
+
+Object.seal(mergedDestination);
+
+console.log("Is sealed:", Object.isSealed(mergedDestination));
+console.log("Is frozen:", Object.isFrozen(mergedDestination));
+
 // 6
 const destinationDetails = {
   name: "Machu Picchu",
@@ -71,6 +106,14 @@ const destinationDetails = {
   yearVisited: 2019,
   ratings: [9, 8.5, 9, 9.5],
 };
+
+function logProperties(obj) {
+  Object.keys(obj).forEach((x) => {
+    console.log(`${x}: ${obj[x]}`);
+  });
+}
+
+logProperties(destinationDetails);
 
 // 7
 const destinationRatings = {
