@@ -123,6 +123,18 @@ const destinationRatings = {
   Colosseum: 6.5,
 };
 
+function increaseRating(destinationName) {
+  const entries = Object.entries(destinationRatings);
+  for (const [name, rating] of entries) {
+    if (name === destinationName && rating < 7) {
+      destinationRatings[name] = rating + 1;
+      console.log(`${name} rating increased to ${destinationRatings[name]}`);
+    }
+  }
+}
+
+increaseRating("Colosseum");
+
 // 8
 const destinations2 = {
   1: { name: "Machu Picchu", yearVisited: 2019, rating: 9 },
@@ -130,12 +142,47 @@ const destinations2 = {
   3: { name: "Great Wall of China", yearVisited: 2018, rating: 8.6 },
 };
 
+function getRecentDestinations(destinations) {
+  let result = [];
+  for (const [id, destination] of Object.entries(destinations)) {
+    if (destination.yearVisited > 2015) {
+      let newDestination = {
+        name: destination.name,
+        yearVisited: destination.yearVisited,
+        rating: destination.rating,
+        isNewer: true,
+      };
+      result.push(newDestination);
+    }
+  }
+  return result;
+}
+
+const recentDestinations = getRecentDestinations(destinations2);
+console.log(recentDestinations);
+
 // 9
 const activityRatings = {
   hiking: [9, 8, 10, 7, 8.5],
   sightseeing: [8.5, 8, 9, 9.5, 7.5],
   snorkeling: [7, 7.5, 8, 8.5, 9],
 };
+
+function calculateAverageRatings(activityRatings) {
+  const activities = Object.keys(activityRatings);
+  for (let i = 0; i < activities.length; i++) {
+    const activity = activities[i];
+    const ratings = activityRatings[activity];
+    let sum = 0;
+    for (let j = 0; j < ratings.length; j++) {
+      sum += ratings[j];
+    }
+    const average = sum / ratings.length;
+    console.log(`${activity} average rating: ${average.toFixed(2)}`);
+  }
+}
+
+calculateAverageRatings(activityRatings);
 
 // 10
 const destinationAwards = {
