@@ -181,8 +181,8 @@ function nextTurn(playernum) {
 
 function endGame(playernum) {
   console.log("\nGame over!\n");
-  for (let i = 0; i < players[playernum].face.length; i++)
-    players[playernum].face[i] = true;
+  for (let i = 0; i < players.length; i++)
+    for (let j = 0; j < players[i].face.length; j++) players[i].face[j] = true;
   board();
   playersScore = score();
   console.log("\nFinal Scores:");
@@ -201,8 +201,18 @@ function score() {
   let score = [];
   let sum = 0;
   for (let i = 0; i < players.length; i++) {
-    for (let j = 0; j < players[i].hand.length; j++)
+    for (let j = 0; j < players[i].hand.length; j++) {
+      for (let t = j + 1; t < players[i].hand.length; t++)
+        if (
+          players[i].hand[j].value === players[i].hand[t].value &&
+          players[i].hand[j].value !== -1
+        ) {
+          players[i].hand[j].value = 0;
+          players[i].hand[t].value = 0;
+        }
       sum += players[i].hand[j].value;
+    }
+
     score.push(sum);
     sum = 0;
   }
@@ -212,7 +222,9 @@ function score() {
 function restartAsk() {
   rl.question("Play again (Y/N)? ", function (answer) {
     if (answer.toUpperCase() === "Y") {
+      console.clear();
       restartGame();
+      askPlayerNames();
     } else if (answer.toUpperCase() === "N") {
       rl.close();
     } else {
@@ -223,16 +235,13 @@ function restartAsk() {
 }
 
 function restartGame() {
-  console.clear();
-  deck = createDeck();
-  shuffleDeck(deck);
   for (let i = 0; i < players.length; i++) {
     players[i].hand = [];
     players[i].face = [false, false, false, false];
   }
   discardPile.pop();
-  deal4cards();
-  turn(0);
+  deck = createDeck();
+  shuffleDeck(deck);
 }
 
 function askPlayerNames() {
