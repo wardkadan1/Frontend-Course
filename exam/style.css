@@ -1,0 +1,29 @@
+.main_ {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "pink_ yell orange_ white";
+  height: 100vh;
+}
+
+._1_ {
+  grid-area: pink_;
+  display: grid;
+  grid-template-rows: 30vh 70vh;
+}
+
+._2_ {
+  grid-area: yell;
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+._3_ {
+  grid-area: orange_;
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+._4_ {
+  grid-area: white_;
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
