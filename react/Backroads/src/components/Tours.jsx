@@ -1,5 +1,7 @@
 import { tours } from "../data";
 import Title from "./Title";
+import TourInfo from "./TourInfo";
+import ToursImg from "./ToursImg";
 
 export default function Tours() {
   return (
@@ -10,26 +12,15 @@ export default function Tours() {
         {tours.map((tour) => {
           return (
             <article key={tour.id} className="tour-card">
-              <div className="tour-img-container">
-                <img src={tour.image} className="tour-img" alt="" />
-                <p className="tour-date">{tour.date}</p>
-              </div>
-              <div className="tour-info">
-                <div className="tour-title">
-                  <h4>{tour.title}</h4>
-                </div>
-                <p>{tour.info}</p>
-                <div className="tour-footer">
-                  <p>
-                    <span>
-                      <i className="fas fa-map"></i>
-                    </span>
-                    {tour.location}
-                  </p>
-                  <p>{tour.duration} days</p>
-                  <p>from ${tour.cost}</p>
-                </div>
-              </div>
+              <ToursImg image={tour.image} date={tour.date} />
+
+              <TourInfo
+                title={tour.title}
+                info={tour.info}
+                location={tour.location}
+                duration={tour.duration}
+                cost={tour.cost}
+              />
             </article>
           );
         })}
