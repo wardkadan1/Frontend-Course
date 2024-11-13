@@ -1,0 +1,26 @@
+<div>
+  <h1>Welcome to Our Page</h1>
+  <button onclick="showMessage()">Click Me</button>
+  <p id="message" style="display: none">Hello! You clicked the button!</p>
+
+  <div>
+    <h2>Image Gallery</h2>
+    <img src="image1.jpg" alt="Image 1" onclick="highlightImage(this)" />
+    <img src="image2.jpg" alt="Image 2" onclick="highlightImage(this)" />
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+
+    function highlightImage(image) {
+      // Remove highlight from all images
+      const images = document.querySelectorAll("img");
+      images.forEach((img) => (img.style.border = "none"));
+
+      // Add highlight to clicked image
+      image.style.border = "2px solid red";
+    }
+  </script>
+</div>
